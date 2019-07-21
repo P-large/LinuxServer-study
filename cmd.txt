@@ -1,0 +1,19 @@
+
+1. vagrantフォルダ、仮想OSを入れるフォルダを作成
+2. 作成したフォルダに移動
+3. 仮想OS(今回はUbuntu)をインストール
+4. vagrantの初期設定
+5. vagrantの立ち上げ(普通のPCでスイッチを入れることと同義)
+6. vagrantのシャットダウン
+
+mkdir %USERPROFILE%\vagrant\ubuntu64_16
+
+cd %USERPROFILE%\vagrant\ubuntu64_16
+
+vagrant box add ubuntu/xenial64 https://vagrantcloud.com/ubuntu/boxes/xenial64/versions/20170929.0.0/providers/virtualbox.box
+
+vagrant init ubuntu/xenial64
+
+vagrant up
+
+vagrant halt
